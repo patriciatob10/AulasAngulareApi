@@ -1,0 +1,11 @@
+<div class="container pt-4">
+        <h4>Lista de tarefas</h4>
+        <a routerLink="adicionar">Adicionar tarefa</a>
+        <div class="row">
+
+         <app-card-tarefa class="col" *ngFor="let tarefas of tarefas | async"[tarefa]="tarefas">
+        </app-card-tarefa>   
+
+       </div>
+       <app-rodape></app-rodape>   
+</div>
